@@ -1,8 +1,8 @@
 {
-  "name": "vue-admin-template",
+  "name": "guli-admin",
   "version": "4.2.1",
-  "description": "A vue admin template with Element UI & axios & iconfont & permission control & lint",
-  "author": "Pan <panfree23@gmail.com>",
+  "description": "谷粒学院后台管理系统",
+  "author": "zhuyc zyc199777@gmail.com",
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
