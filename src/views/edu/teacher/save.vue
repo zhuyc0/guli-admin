@@ -98,7 +98,7 @@ export default {
     //根据讲师id查询的方法
     getInfo(id) {
       teacherApi.getTeacherInfo(id).then(response => {
-        this.teacher = response.data.teacher;
+        this.teacher = response.data.item;
       });
     },
     saveOrUpdate() {

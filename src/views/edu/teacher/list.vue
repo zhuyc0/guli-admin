@@ -204,7 +204,8 @@ export default {
             this.getList();
           });
         })
-        .catch(() => {}); //点击取消，执行catch方法
+        //点击取消，执行catch方法
+        .catch(() => {});
     }
   }
 };
