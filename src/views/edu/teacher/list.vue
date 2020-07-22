@@ -150,7 +150,7 @@
 import teacher from "@/api/edu/teacher";
 
 export default {
-  name: "TeacherList",
+  name: "teacher-list",
   data() {
     return {
       list: null, //查询之后接口返回集合
