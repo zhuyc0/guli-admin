@@ -37,5 +37,19 @@ export default {
         url: '/eduservice/course/updateCourseInfo',
         method: 'post',
         data
-    })
+    }),
+    //课程确认信息显示
+    getPublihCourseInfo(id) {
+        return request({
+            url: `/eduservice/course/getPublishCourseInfo/${id}`,
+            method: 'get'
+        })
+    },
+    //课程最终发布
+    publihCourse(id) {
+        return request({
+            url: `/eduservice/course/publishCourse/${id}`,
+            method: 'post'
+        })
+    },
 }
