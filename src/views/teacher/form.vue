@@ -52,7 +52,7 @@
           :on-error="handleAvatarError"
           :before-upload="beforeAvatarUpload"
           class="avatar-uploader"
-          action="http://localhost:8120/admin/oss/file/upload?module=avatar"
+          :action="`${BASE_API}/admin/oss/file/upload?module=avatar`"
         >
           <img
             v-if="teacher.avatar"
@@ -89,6 +89,7 @@ export default {
         level: 1,
       },
       saveBtnDisabled: false, // 默认按钮可用
+      BASE_API: process.env.VUE_APP_BASE_API
     };
   },
   created() {

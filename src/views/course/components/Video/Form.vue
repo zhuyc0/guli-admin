@@ -36,7 +36,7 @@
           :on-remove="handleOnRemove"
           :file-list="fileList"
           :limit="1"
-          action="http://127.0.0.1:8130/admin/vod/media/upload"
+          :action="`${BASE_API}/admin/vod/media/upload`"
         >
           <el-button
             slot="trigger"
@@ -81,6 +81,7 @@ export default {
       },
       fileList: [], // 上传文件列表
       uploadBtnDisabled: false,
+      BASE_API: process.env.VUE_APP_BASE_API
     };
   },
 
